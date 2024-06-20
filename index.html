@@ -23,13 +23,18 @@
 
         <!--HERO SECTION-->
         <section class="body-content flex-row-container" id="desktop-hero"> <!--id="hero-sect"-->
-            <div id="hero-sect-text">
+            <div id="hero-col-left"> <!--hero-sect-text-->
                 <h1>Hi, I'm Lana Sardar.</h1>
                 <p>I am a software developer turned UI/UX designer based in Chicago. I am passionate about merging my technical expertise in web development with my ability to empathize with and design for real people. In my career, my hopes are to create efficient, accessible digital interfaces that offer an unprecedented user experience. </p>
-                <button type="button">My Resume</button>
+                <div class="flex-row-wrap-container" id="button-container">
+                    <button type="button">My Resume</button>
+                    <button type="button" id="connect-btn">Let's Connect!</button>
+                    <!-- <button type="button" id="connect-btn"><a href="#connect">Let's Connect!</a></button> -->
+                </div>
+                
             </div>
 
-            <div id="hero-sect-img">
+            <div id="hero-col-right">
                 <img src="images/about_me.jpg" height="276px"> 
             </div>
         </section>
@@ -80,6 +85,25 @@
                 <p>Mobile App Case Study | Quick blurb about the project. Lorem ipsum dolor sit amet consectetur. Leo commodo est faucibus neque sagittis tincidunt suscipit massa tellus.</p>
             </div>
         </section>
+        <!--END PROJECT GALLERY-->
+
+        <hr class="body-content">
+
+        <!--LETS CONNECT-->
+        <section class="body-content flex-centered" >
+            <div id="connect">
+                <h2>Let's Connect!</h2>
+                <form>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br>
+                    <label for="message">Message:</label><br>
+                    <textarea name="message" placeholder="Write something..."></textarea><br>
+                    <input id="submit-btn" type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
 
         <!--FOOTER-->
         <footer>
@@ -91,5 +115,7 @@
             </div>
             
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
